@@ -1,0 +1,306 @@
+/*Reseteo propiedades HTML*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Fin Reseteo propiedades HTML*/
+
+/*Barra de navegación*/
+
+header {
+    background: rgba(0, 9, 66, 0.25);
+    backdrop-filter: blur(4px);
+    padding: 20px;
+}
+
+.navigation-bar {
+    position: fixed;
+    width: 100%;
+}
+
+.content-navbar {
+    width: 95%;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 80px;
+}
+
+.content-navbar ul li {
+    display: inline-block;
+    margin: 0 15px;
+    list-style: none;
+
+}
+
+/*Media Querys*/
+/*Cel*/
+@media only screen and (max-width: 480px) {
+    .content-navbar {
+        padding: 0.5rem 0;
+
+    }
+}
+
+/*Fin Cel*/
+
+/*Fin Media Queryes*/
+
+
+.list-menu {
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    color: white;
+}
+.list-menu:hover{
+
+}
+
+/*Fin Barra de navegación*/
+
+/*Carrousel*/
+.carrousel {
+    display: block;
+    max-width: 100%;
+}
+
+/* Fin Carrousel*/
+
+
+/*Secciones*/
+.titulo-seccion {
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.parrafo {
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    margin: 5% 0;
+}
+
+.inline {
+    display: inline-block;
+    width: 95%;
+}
+
+/*Seccion 1*/
+.container-seccion-1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-left: 5%;
+    align-items: center;
+}
+
+.seccion-1 {
+    width: 90%;
+    margin: 1rem 0.5rem;
+}
+
+.seccion-1-item {
+    width: 50%;
+}
+
+/*Media Query--Seccion 1--*/
+/*Cel*/
+@media only screen and (max-width: 480px) {
+    .seccion-1 {
+        width: 100%;
+    }
+
+    .container-seccion-1 {
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem 0 0 2rem;
+    }
+}
+
+/*Fin Cel*/
+
+
+/*Fin Media Query--Seccion 1--*/
+
+/*Fin Seccion 1*/
+
+/*Seccion 2*/
+.container-seccion-2 {
+    display: flex;
+}
+
+.seccion-2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+/*Las imagenes tienen unidades absolutas de
+medida, si le pongo en % se rompe, por eso le puse
+px*/
+.seccion-2-item {
+    width: 400px;
+    transition: all 0.5s;
+}
+
+.item-2:hover{
+transform: scale(1.1);
+}
+
+/*Fin Seccion 2*/
+
+/*Seccion 3*/
+.img-seccion-3 {
+    width: 90%;
+}
+
+/*Fin Seccion 3*/
+
+.container {
+margin-top: 5%;
+margin-left: 5%;
+}
+
+/*Media Querys*/
+/*Cel*/
+@media only screen and (max-width: 480px) {
+    .container {
+        margin: 1rem 2rem;
+        width: 90%;
+
+    }
+}
+
+/*Fin Cel*/
+
+
+/*Sección 4*/
+
+.seccion-4 {
+    display: flex;
+}
+
+.seccion-4-item {
+    flex-wrap: wrap;
+}
+
+.grid-container {
+
+    display: grid;
+    grid-template-columns: repeat (3, 1fr);
+    grid-template-rows: repeat (4, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+}
+
+.grid-item-1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.grid-item-2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.grid-item-3 {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.grid-item-4 {
+    grid-area: 2 / 1 / 3 / 3;
+}
+
+.grid-item-5 {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.grid-item-6 {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.grid-item-7 {
+    grid-area: 3 / 2 / 4 / 4;
+}
+
+.grid-item-8 {
+    grid-area: 4 / 1 / 5 / 3;
+}
+
+.grid-item-9 {
+    grid-area: 4 / 3 / 5 / 4;
+}
+
+.img-seccion-4-b {
+    width: 100%;
+}
+
+.img-seccion-4-a {
+    max-width: 100%;
+
+}
+
+/*Media Queries*/
+
+/*Cel*/
+@media only screen and (max-width: 480px) {
+    .list-menu {
+        font-size: 10px;
+    }
+
+    .titulo-seccion {
+        font-size: 20px;
+    }
+
+    .parrafo {
+        font-size: 12px;
+        margin: 2% 0;
+    }
+
+    .grid-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
+
+/*Fin Cel*/
+
+/*Tablet*/
+@media only screen and (min-width:481px) and (max-width:968px) {
+    .list-menu {
+        font-size: 15px;
+    }
+
+    .titulo-seccion {
+        font-size: 25px;
+    }
+
+    .parrafo {
+        font-size: 15px;
+        margin: 10%;
+    }
+    .grid-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
+
+/*Fin Tablet*/
+
+/*Fin Media Queries*/
+
+/*Footer*/
+.footer {
+    background-color: black;
+}
+
+/*Fin Footer*/

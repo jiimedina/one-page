@@ -58,9 +58,7 @@ header {
     text-decoration: none;
     color: white;
 }
-.list-menu:hover{
 
-}
 
 /*Fin Barra de navegación*/
 
@@ -81,6 +79,36 @@ header {
 
 }
 
+/*Animacion titulo secciones*/
+path {
+    stroke: #202E8F;
+    fill: #202E8F;
+    stroke-dasharray: 700;
+    opacity: 10;
+    animation: animate 4s cubic-bezier(0, 0.23, 1, 0.1);
+}
+@keyframes animate {
+    0% {
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 700;
+   }
+    30% {
+        opacity: 3.333;
+        fill: none;
+        stroke-dashoffset: 700;
+   }
+    90% {
+        fill: none;
+        opacity: 6.66666;
+   }
+    100% {
+        opacity: 10;
+        fill: #202E8F;
+        stroke-dashoffset: 0;
+   }
+}
+/*Fin animación titulo secciones*/
 .parrafo {
     font-family: 'Inter', sans-serif;
     font-size: 25px;

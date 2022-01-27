@@ -225,26 +225,59 @@ px*/
 }
 
 .seccion-4-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 
 .figure {
-    border-radius: 6px;
+    
     box-shadow: 0px 15px 25px rgba(0, 9, 66, 0.25);
     overflow: hidden;
     position: relative;
+    text-align: center;
+    overflow: hidden;
+    margin: 2rem;
+
 }
 
-.figure:hover {
-    background-color: rgba(0, 9, 66, 0.25);
+.figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.figure .capa-img {
+    width: 0%;
+    height: 100vh;
+    background-color: rgba(244, 29, 232, 0.4);
     position: absolute;
     top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-
+    transition: 0.4s all;
 }
+
+.capa-img h3{
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    
+    }
+
+    .capa-img p{
+        color: white;
+        font-size: 1rem;  
+    }
+
+    .figure:hover .capa-img{
+        width: 100%;
+    }
+
 
 .grid-container {
 

@@ -59,6 +59,11 @@ header {
     color: white;
 }
 
+.list-menu:hover{
+    text-shadow: 0 0 1rem white, 0 0 1rem white, 0 0 1rem white;
+    color: white;
+}
+
 
 /*Fin Barra de navegación*/
 
@@ -183,19 +188,37 @@ path {
 medida, si le pongo en % se rompe, por eso le puse
 px*/
 .seccion-2-item {
-    width: 400px;
+    width: 50vh;
     transition: all 0.5s;
+    margin: 1rem 2rem;
 }
 
 .item-2:hover {
     transform: scale(1.05);
 }
 
+/* Meria Queries*/
+/*Cel*/
+@media only screen and (max-width: 480px) {
+    .seccion-2-item {
+        
+        width: 80%;
+
+    }
+}
+/*Fin Cel*/
+/*Fin Media Queries*/
+
 /*Fin Seccion 2*/
 
 /*Seccion 3*/
 .img-seccion-3 {
     width: 90%;
+    margin: 0.3rem;
+}
+
+.row-margin {
+margin: 2rem 0;
 }
 
 /*Fin Seccion 3*/
@@ -209,8 +232,8 @@ px*/
 /*Cel*/
 @media only screen and (max-width: 480px) {
     .container {
-        margin: 1rem 2rem;
-        width: 90%;
+        margin: 1rem 0rem;
+        width: 100%;
 
     }
 }
@@ -231,6 +254,7 @@ px*/
     flex-wrap: wrap;
 }
 
+
 .figure {
     
     box-shadow: 0px 15px 25px rgba(0, 9, 66, 0.25);
@@ -238,7 +262,7 @@ px*/
     position: relative;
     text-align: center;
     overflow: hidden;
-    margin: 2rem;
+    margin: 1.5rem;
 
 }
 
@@ -356,6 +380,7 @@ px*/
         justify-content: space-around;
         flex-wrap: wrap;
     }
+    
 }
 
 /*Fin Cel*/

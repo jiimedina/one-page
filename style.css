@@ -128,16 +128,14 @@ path {
 /*Seccion 1*/
 .container-seccion-1 {
     display: flex;
-    justify-content: center;
+    
     margin-top: 5%;
     margin-left: 5%;
-    align-items: center;
-    align-content: center;
     flex-wrap: wrap;
 }
 
 .seccion-1 {
-    width: 90%;
+    width: 50%;
     margin: 1rem 0.5rem;
 }
 
@@ -154,7 +152,7 @@ path {
     }
 
     .container-seccion-1 {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         margin: 1rem 0 0 2rem;
     }
@@ -177,6 +175,7 @@ path {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-bottom: 1.5rem;
 
 }
 
@@ -189,7 +188,7 @@ px*/
 }
 
 .item-2:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 /*Fin Seccion 2*/

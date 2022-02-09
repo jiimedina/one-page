@@ -1,0 +1,71 @@
+/*Seccion 1 - Nosotros*/
+@import '../base/listas';
+@import '../base/variables';
+#nosotros{
+    .container-seccion-1{
+        display: flex;
+    
+        margin-top: 5%;
+        margin-left: 5%;
+        flex-wrap: wrap;
+        .img-titulo{
+            path{
+                stroke: nth($color,2);
+                fill: nth($color,2);
+                stroke-dasharray: 700;
+                opacity: 10;
+                animation: animate 8s cubic-bezier(0, 0.23, 1, 0.1);
+            }
+            @keyframes animate {
+                0% {
+                    opacity: 0;
+                    fill: none;
+                    stroke-dashoffset: 700;
+                }
+            
+                30% {
+                    opacity: 3.333;
+                    fill: none;
+                    stroke-dashoffset: 700;
+                }
+            
+                90% {
+                    fill: none;
+                    opacity: 6.66666;
+                }
+            
+                100% {
+                    opacity: 10;
+                    fill: nth($color,2);
+                    stroke-dashoffset: 0;
+                }
+            }
+
+        }
+
+        .seccion-1{
+            width: 50%;
+            margin: 1rem 0.5rem;
+            .parrafo{
+                font-family: $font-sec;
+                font-size: 20px;
+                margin: 5% 0;
+            }
+            .seccion-1-item{
+                width: 50%;
+            }
+
+            /*Media Query Cel*/
+            @media  screen and (max-width: 480px) {
+                width: 100%;
+             }
+        }
+
+        /*Media Query Cel*/
+        @media  screen and (max-width: 480px) {
+            flex-direction: row;
+            align-items: center;
+            margin: 1rem 0 0 2rem;
+         }
+    }
+}

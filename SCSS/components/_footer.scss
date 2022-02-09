@@ -1,0 +1,66 @@
+/*Footer*/
+@import '../base/variables';
+@import '../base/mixins';
+
+footer{
+    width: 100%;
+    padding: 50px 0px;
+    background-image: url(../../assets/bg/wave.svg) ;
+    background-size: cover;
+
+    .container-footer{
+        @include flex(space-between,none,wrap);
+        max-width: 1200px;
+        margin: auto;
+        margin-top: 100px;
+        /*Primera columna footer*/
+        .box-footer{
+            display: flex;
+            flex-direction: column;
+            padding: 40px;
+                           
+                img{
+                    width: 80px;
+                }
+        
+            .description{
+                max-width: 350px;
+                margin-top: 20px;
+                font-weight: 500;
+                font-size: 1.3rem;
+                color: nth($color, 2);
+            }
+        }
+
+         /*Segunda columna footer*/
+         .box-footer{
+             h2{
+                margin-bottom: 30px;
+                font-weight: 700;
+                color: nth($color, 2);
+             }
+             a{
+                margin-top: 10px;
+                color: nth($color, 2);
+                font-weight: 600;
+                text-decoration: none;
+
+
+                &:hover{
+                    opacity: 0.8;
+                }
+             }
+         }
+
+         /*Tercera columna footer*/
+         .box-footer{
+             a{
+                margin-top: 10px;
+                color: nth($color, 2);
+                font-weight: 600;
+                text-decoration: none;
+             }
+         }
+
+    }
+}

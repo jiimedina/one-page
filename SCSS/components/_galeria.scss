@@ -1,0 +1,49 @@
+/*Seccion 4 - Galeria*/
+@import '../base/mixins';
+@import '../base/variables';
+
+#galeria{
+    div{
+        
+        .contenerdor{
+            margin-left: 5%;
+           
+            
+            .titulo-seccion{
+                font-size: 40px;
+                font-weight: 600;
+                font-family: $font-ppal;  
+            }
+
+            .parrafo{
+                font-family: $font-sec;
+                font-size: 20px;
+                margin: 5% 0;
+
+            }
+        }
+
+        .container-seccion-2{
+            display: flex;
+            .seccion-2{
+                width: 100%;
+                @include flex(space-around,none,wrap);
+                
+                margin-bottom: 1.5rem;
+                div{
+                    .seccion-2-item{
+                        width: 50vh;
+                        transition: all 0.5s;
+                        margin: 1rem 2rem;
+
+                        /*Medias Query cel*/
+                        @media  screen and (max-width: 480px) {
+                            width: 80%;
+                         }
+
+                    }
+                }
+            }
+        }
+    }
+}

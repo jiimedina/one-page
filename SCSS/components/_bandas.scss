@@ -1,0 +1,123 @@
+/*Seccion 2 - Bandas*/
+/*Seccion 2 - Bandas*/
+@import '../base/mixins';
+@import '../base/variables';
+@import '../base/mapas';
+
+#bandas{
+       
+    .contenedor{
+        margin-top: 5%;
+        margin-left: 5%;
+        .titulo-seccion{
+            font-size: 40px;
+            font-weight: 600;
+            font-family: $font-ppal;
+        }
+
+        .parrafo{
+            font-family: $font-sec;
+            font-size: 20px;
+            margin: 5% 0;
+        }
+    }
+
+    .contenedor-bandas{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+
+    .wrapper{
+        display: flex;
+        width: 90%;
+        justify-content: space-around;
+
+        .card{
+            width: 280px;
+            height: 360px;
+            padding: 2rem 1rem;
+            background: nth($color,7);
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+            transition: 0.5s ease-in-out;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                left: 0;
+
+            }
+            .info{
+                position: relative;
+                z-index: 3;
+                color: nth($color,7);
+                opacity: 0;
+                transform: translateY(30px);
+                transition: 0.5s all;
+
+                h3{
+                    margin: 0;
+
+                }
+                p{
+                   letter-spacing: 1px; 
+                   font-size: 15px;
+                   margin-top: 8px;
+                   margin-top: 20px;
+                }
+                .btn{
+                    text-decoration: map-get($map: $boton-s, $key: text-decoration-btn-s);
+                    padding: map-get($map: $boton-s, $key: padding-btn-s);
+                    background:  map-get($map: $boton-s, $key: background-btn-s);
+                    font-size:  map-get($map: $boton-s, $key: font-size-btn-s);
+                    font-weight:  map-get($map: $boton-s, $key: font-weight-btn-s);
+                    color:  map-get($map: $boton-s, $key: color-btn-s);
+                    cursor:  map-get($map: $boton-s, $key: cursor-btn-s);
+                    transition:  map-get($map: $boton-s, $key: transition-btn-s);
+
+                    &hover{
+                        box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+                    }
+                }
+                
+            }
+
+            &:hover{
+                transform: translateY(20px);
+                .info{
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            &:before{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: block;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(to bottom, rgba(32,46,143,0.5), rgba(79,111,190,0.5));
+                z-index: 2;
+                transition: 0.5s all;
+                opacity: 1;
+
+                &hover{
+                    opacity: 1;
+                }
+            }
+            
+           
+        }
+    }
+}
+}

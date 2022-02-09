@@ -1,0 +1,62 @@
+/*Seccion 3 - Desfiles*/
+@import '../base/variables';
+@import '../base/listas';
+
+
+.wave{
+    display: block;
+    height: 300px;
+    background-image: url(../../assets/bg/wave.svg);
+    background-repeat: repeat-x;
+    background-size: cover;
+    background-position: center center;
+}
+#desfiles, .contenedor-desfile{
+    
+    margin-left: 0;
+    background-color: nth($color,4);
+   
+    .titulo-seccion{
+        font-size: 40px;
+        font-weight: 600;
+        font-family: $font-ppal;
+        margin-left: 5%;
+        
+
+    }
+    .container{
+       
+        .row-margin{
+            margin: 2rem 0;
+            .img-seccion-3{
+                width: 90%;
+                margin: 0.3rem;
+            }
+
+            .parrafo{
+                font-family: $font-sec;
+                font-size: 20px;
+                margin: 5% 0;
+            }
+        }
+
+
+        .row-margin{
+            margin: 2rem 0;
+            
+            .parrafo{
+                font-family: $font-sec;
+                font-size: 20px;
+                margin: 5% 0;
+            }
+            .img-seccion-3{
+                width: 90%;
+                margin-bottom: 10%;
+                margin-top: 0.3rem;
+            }
+
+        }
+
+    }
+    
+}

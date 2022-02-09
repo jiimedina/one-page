@@ -1,0 +1,12 @@
+/*Mapas*/
+
+$boton-s: (
+                    text-decoration-btn-s: none,
+                    padding-btn-s: 0.5rem 1rem,
+                    background-btn-s: nth($color,1),
+                    font-size-btn-s: 14px,
+                    font-weight-btn-s: 700,
+                    color-btn-s: nth($color,7),
+                    cursor-btn-s: pointer,
+                    transition-btn-s: 0.4s ease-in-out,
+)

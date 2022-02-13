@@ -9,6 +9,7 @@
     .contenedor{
         margin-top: 5%;
         margin-left: 5%;
+
         .titulo-seccion{
             font-size: 40px;
             font-weight: 600;
@@ -34,10 +35,11 @@
         display: flex;
         width: 90%;
         justify-content: space-around;
+        flex-wrap: wrap;
 
         .card{
-            width: 280px;
-            height: 360px;
+            width: 400px;
+            height: 500px;
             padding: 2rem 1rem;
             background: nth($color,7);
             position: relative;

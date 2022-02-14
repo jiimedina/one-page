@@ -84,7 +84,7 @@
                     color:  map-get($map: $boton-s, $key: color-btn-s);
                     cursor:  map-get($map: $boton-s, $key: cursor-btn-s);
                     transition:  map-get($map: $boton-s, $key: transition-btn-s);
-
+                    border-radius: map-get($map: $boton-s, $key: border-radius-btn-s);
                     &hover{
                         box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
                     }

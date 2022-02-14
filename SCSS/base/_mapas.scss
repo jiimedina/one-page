@@ -9,4 +9,12 @@ $boton-s: (
                     color-btn-s: nth($color,7),
                     cursor-btn-s: pointer,
                     transition-btn-s: 0.4s ease-in-out,
-)
+);
+
+$breakpoints: (
+    "xs": 0px,
+    "sm": 480px,
+    "md": 720px,
+    "lg": 960px,
+    "xl": 1200px,
+);

@@ -2,13 +2,30 @@
 @import '../base/variables';
 @import '../base/listas';
 @import '../base/mixins';
+@import '../base/mapas';
+
 *{
     margin: 0;
     padding: 0;
 }
 
 .logo{
-    width: 80px;
+    @include xs{
+        width: 50px;
+    }
+    @include sm{
+        width: 55px;
+    }
+    @include md{
+        width: 60px;
+    }
+    @include lg{
+        width: 70px;
+    }
+    @include md{
+        width: 80px;
+    }
+   
 }
 
 .list-menu{

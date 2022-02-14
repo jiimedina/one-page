@@ -8,6 +8,14 @@
         margin-top: 5%;
         margin-left: 5%;
         flex-wrap: wrap;
+
+         /*Media Query Cel*/
+         @include xs{
+            flex-direction: row;
+            align-items: center;
+            margin: 1rem 0 0 2rem;
+
+        } 
         .img-titulo{
             path{
                 stroke: nth($color,2);
@@ -43,13 +51,8 @@
 
         }
         
-        /*Media Query Cel*/
-        @media  screen and (max-width: 480px) {
-            flex-direction: row;
-            align-items: center;
-            margin: 1rem 0 0 2rem;
-         }
-
+       
+        
          
     }
     .contenedor-seccion-1{
@@ -58,7 +61,10 @@
             width: 90%;
             margin: 1rem 0.5rem;
             @include flex(space-evenly,center,wrap);
-
+             /*Media Query Cel*/
+            @include xs{
+                width: 100%;
+            }
             .titulo-pagina{
                 font-family: $font-ppal;
                 font-weight: 800;
@@ -73,10 +79,8 @@
                 width: 50%;
             }
 
-            /*Media Query Cel*/
-            @media  screen and (max-width: 480px) {
-                width: 100%;
-             }
+           
+            
         }
     }
 

@@ -5,13 +5,36 @@
 /*Listas*/
 /*Colores*/
 /*Mixins*/
+/*Mapas*/
 * {
   margin: 0;
   padding: 0;
 }
 
-.logo {
-  width: 80px;
+@media screen and (min-width: 0px) {
+  .logo {
+    width: 50px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .logo {
+    width: 55px;
+  }
+}
+@media screen and (min-width: 720px) {
+  .logo {
+    width: 60px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .logo {
+    width: 70px;
+  }
+}
+@media screen and (min-width: 720px) {
+  .logo {
+    width: 80px;
+  }
 }
 
 .list-menu {
@@ -38,6 +61,13 @@
   margin-left: 5%;
   flex-wrap: wrap;
   /*Media Query Cel*/
+}
+@media screen and (min-width: 0px) {
+  #nosotros .container-seccion-1 {
+    flex-direction: row;
+    align-items: center;
+    margin: 1rem 0 0 2rem;
+  }
 }
 #nosotros .container-seccion-1 .img-titulo path {
   stroke: #000942;
@@ -67,13 +97,6 @@
     stroke-dashoffset: 0;
   }
 }
-@media screen and (max-width: 480px) {
-  #nosotros .container-seccion-1 {
-    flex-direction: row;
-    align-items: center;
-    margin: 1rem 0 0 2rem;
-  }
-}
 #nosotros .contenedor-seccion-1 {
   display: flex;
 }
@@ -85,6 +108,11 @@
   align-items: center;
   flex-wrap: wrap;
   /*Media Query Cel*/
+}
+@media screen and (min-width: 0px) {
+  #nosotros .contenedor-seccion-1 .seccion-1 {
+    width: 100%;
+  }
 }
 #nosotros .contenedor-seccion-1 .seccion-1 .titulo-pagina {
   font-family: "Raleway", sans-serif;
@@ -99,13 +127,7 @@
 #nosotros .contenedor-seccion-1 .seccion-1 .seccion-1-item {
   width: 50%;
 }
-@media screen and (max-width: 480px) {
-  #nosotros .contenedor-seccion-1 .seccion-1 {
-    width: 100%;
-  }
-}
 
-/*Seccion 2 - Bandas*/
 /*Seccion 2 - Bandas*/
 /*Mixins*/
 /*Variables*/
@@ -314,7 +336,7 @@
   position: relative;
   width: 50%;
   height: 100%;
-  /*Media Query Cel*/
+  /*Media Query Tablet y Cel*/
 }
 #contacto .img-contacto img {
   position: absolute;
@@ -335,7 +357,7 @@
   z-index: 1;
   mix-blend-mode: screen;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 720px) {
   #contacto .img-contacto {
     position: absolute;
     top: 0;
@@ -351,14 +373,13 @@
   flex-wrap: nowrap;
   width: 50%;
   height: 100%;
-  /*Media Query Cel*/
-  /*Media Query Cel*/
+  /*Media Query Tablet y Cel*/
 }
 #contacto .content-contacto .form-contacto {
   width: 50%;
-  /*Media Query Cel*/
+  /*Media Query Tablet y Cel*/
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 720px) {
   #contacto .content-contacto .form-contacto {
     width: 100%;
     padding: 50px;
@@ -413,12 +434,15 @@
 #contacto .content-contacto .form-contacto .input-contacto p a {
   color: #F41DE8;
 }
-#contacto .content-contacto .form-contacto .remember {
+#contacto .content-contacto .form-contacto .input-contacto p a:hover {
+  color: #D6D32B;
+}
+#contacto .content-contacto .form-contacto .newsletter {
   margin-bottom: 10px;
   font-weight: 400;
   font-size: 14px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 720px) {
   #contacto .content-contacto {
     display: flex;
     justify-content: center;
@@ -492,7 +516,6 @@ footer .container-footer .box-footer a {
 /*Colores*/
 /*Extends*/
 /*Mixins*/
-/*Condiciones*/
 /*Mapas*/
 
 /*# sourceMappingURL=style.css.map */

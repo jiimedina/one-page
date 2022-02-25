@@ -1,6 +1,8 @@
 /*Seccion 1 - Nosotros*/
 @import '../base/listas';
 @import '../base/variables';
+@import '../base/mapas';
+
 #nosotros{
     .container-seccion-1{
         display: flex;
@@ -68,12 +70,28 @@
             .titulo-pagina{
                 font-family: $font-ppal;
                 font-weight: 800;
-                font-size: 2rem;
+                @include xs{
+                    font-size: 25px;
+                }
+                @include md{
+                    font-size: 30px;
+                }
+                @include xl{
+                    font-size: 40px;
+                }
             }
             .parrafo{
                 font-family: $font-sec;
-                font-size: 20px;
                 margin: 5% 8%;
+                @include xs{
+                    font-size: 18px;
+                }
+                @include md{
+                    font-size: 20px;
+                }
+                @include xl{
+                    font-size: 22px;
+                }
             }
             .seccion-1-item{
                 width: 50%;

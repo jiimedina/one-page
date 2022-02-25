@@ -17,10 +17,19 @@
     background-color: nth($color,4);
    
     .titulo-seccion{
-        font-size: 40px;
+        
         font-weight: 600;
         font-family: $font-ppal;
         margin-left: 5%;
+        @include xs{
+            font-size: 25px;
+        }
+        @include md{
+            font-size: 30px;
+        }
+        @include xl{
+            font-size: 40px;
+        }
         
 
     }
@@ -35,8 +44,16 @@
 
             .parrafo{
                 font-family: $font-sec;
-                font-size: 20px;
                 margin: 5% 0;
+                @include xs{
+                    font-size: 18px;
+                }
+                @include md{
+                    font-size: 20px;
+                }
+                @include xl{
+                    font-size: 22px;
+                }
             }
         }
 
@@ -44,11 +61,7 @@
         .row-margin{
             margin: 2rem 0;
             
-            .parrafo{
-                font-family: $font-sec;
-                font-size: 20px;
-                margin: 5% 0;
-            }
+            
             .img-seccion-3{
                 width: 90%;
                 margin-bottom: 10%;

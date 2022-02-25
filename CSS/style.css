@@ -55,6 +55,7 @@
 /*Listas*/
 /*Colores*/
 /*Variables*/
+/*Mapas*/
 #nosotros .container-seccion-1 {
   display: flex;
   margin-top: 5%;
@@ -117,12 +118,40 @@
 #nosotros .contenedor-seccion-1 .seccion-1 .titulo-pagina {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
-  font-size: 2rem;
+}
+@media screen and (min-width: 0px) {
+  #nosotros .contenedor-seccion-1 .seccion-1 .titulo-pagina {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 720px) {
+  #nosotros .contenedor-seccion-1 .seccion-1 .titulo-pagina {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #nosotros .contenedor-seccion-1 .seccion-1 .titulo-pagina {
+    font-size: 40px;
+  }
 }
 #nosotros .contenedor-seccion-1 .seccion-1 .parrafo {
   font-family: "Inter", sans-serif;
-  font-size: 20px;
   margin: 5% 8%;
+}
+@media screen and (min-width: 0px) {
+  #nosotros .contenedor-seccion-1 .seccion-1 .parrafo {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 720px) {
+  #nosotros .contenedor-seccion-1 .seccion-1 .parrafo {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #nosotros .contenedor-seccion-1 .seccion-1 .parrafo {
+    font-size: 22px;
+  }
 }
 #nosotros .contenedor-seccion-1 .seccion-1 .seccion-1-item {
   width: 50%;
@@ -137,16 +166,45 @@
   margin-left: 5%;
 }
 #bandas .contenedor .titulo-seccion {
-  font-size: 40px;
   font-weight: 600;
   font-family: "Raleway", sans-serif;
 }
+@media screen and (min-width: 0px) {
+  #bandas .contenedor .titulo-seccion {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 720px) {
+  #bandas .contenedor .titulo-seccion {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #bandas .contenedor .titulo-seccion {
+    font-size: 40px;
+  }
+}
 #bandas .contenedor .parrafo {
   font-family: "Inter", sans-serif;
-  font-size: 20px;
-  margin: 5% 0;
+  margin: 2% 0 0 4%;
+}
+@media screen and (min-width: 0px) {
+  #bandas .contenedor .parrafo {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 720px) {
+  #bandas .contenedor .parrafo {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #bandas .contenedor .parrafo {
+    font-size: 22px;
+  }
 }
 #bandas .contenedor-bandas {
+  margin-top: 5%;
   width: 100%;
   height: 100%;
   display: flex;
@@ -193,7 +251,6 @@
   letter-spacing: 1px;
   font-size: 15px;
   margin-top: 8px;
-  margin-top: 20px;
 }
 #bandas .contenedor-bandas .wrapper .card .info .btn {
   text-decoration: none;
@@ -251,10 +308,24 @@
   background-color: #4F6FBE;
 }
 #desfiles .titulo-seccion, .contenedor-desfile .titulo-seccion {
-  font-size: 40px;
   font-weight: 600;
   font-family: "Raleway", sans-serif;
   margin-left: 5%;
+}
+@media screen and (min-width: 0px) {
+  #desfiles .titulo-seccion, .contenedor-desfile .titulo-seccion {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 720px) {
+  #desfiles .titulo-seccion, .contenedor-desfile .titulo-seccion {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #desfiles .titulo-seccion, .contenedor-desfile .titulo-seccion {
+    font-size: 40px;
+  }
 }
 #desfiles .container .row-margin, .contenedor-desfile .container .row-margin {
   margin: 2rem 0;
@@ -265,16 +336,25 @@
 }
 #desfiles .container .row-margin .parrafo, .contenedor-desfile .container .row-margin .parrafo {
   font-family: "Inter", sans-serif;
-  font-size: 20px;
   margin: 5% 0;
+}
+@media screen and (min-width: 0px) {
+  #desfiles .container .row-margin .parrafo, .contenedor-desfile .container .row-margin .parrafo {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 720px) {
+  #desfiles .container .row-margin .parrafo, .contenedor-desfile .container .row-margin .parrafo {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #desfiles .container .row-margin .parrafo, .contenedor-desfile .container .row-margin .parrafo {
+    font-size: 22px;
+  }
 }
 #desfiles .container .row-margin, .contenedor-desfile .container .row-margin {
   margin: 2rem 0;
-}
-#desfiles .container .row-margin .parrafo, .contenedor-desfile .container .row-margin .parrafo {
-  font-family: "Inter", sans-serif;
-  font-size: 20px;
-  margin: 5% 0;
 }
 #desfiles .container .row-margin .img-seccion-3, .contenedor-desfile .container .row-margin .img-seccion-3 {
   width: 90%;
@@ -290,14 +370,47 @@
   margin-left: 5%;
 }
 #galeria div .contenedor .titulo-seccion {
-  font-size: 40px;
   font-weight: 600;
+  font-family: "Raleway", sans-serif;
+}
+@media screen and (min-width: 0px) {
+  #galeria div .contenedor .titulo-seccion {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 720px) {
+  #galeria div .contenedor .titulo-seccion {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #galeria div .contenedor .titulo-seccion {
+    font-size: 40px;
+  }
+}
+#galeria div .contenedor .sub-titulo-seccion {
+  font-size: 25px;
+  font-weight: 700;
   font-family: "Raleway", sans-serif;
 }
 #galeria div .contenedor .parrafo {
   font-family: "Inter", sans-serif;
-  font-size: 20px;
   margin: 5% 0;
+}
+@media screen and (min-width: 0px) {
+  #galeria div .contenedor .parrafo {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 720px) {
+  #galeria div .contenedor .parrafo {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #galeria div .contenedor .parrafo {
+    font-size: 22px;
+  }
 }
 #galeria div .container-seccion-2 {
   display: flex;
@@ -400,7 +513,7 @@
 #contacto .content-contacto .form-contacto .input-contacto {
   margin-bottom: 20px;
 }
-#contacto .content-contacto .form-contacto .input-contacto span {
+#contacto .content-contacto .form-contacto .input-contacto label {
   font-size: 16px;
   margin-bottom: 5px;
   display: inline-block;
@@ -431,6 +544,18 @@
 #contacto .content-contacto .form-contacto .input-contacto input[type=submit]:hover {
   background: #D6D32B;
   color: #000000;
+}
+#contacto .content-contacto .form-contacto .input-contacto textarea {
+  width: 100%;
+  padding: 10px 20px;
+  outline: none;
+  font-weight: 400;
+  border: 1px solid #000942;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #000942;
+  background: transparent;
+  border-radius: 20px;
 }
 #contacto .content-contacto .form-contacto .input-contacto p a {
   color: #F41DE8;
@@ -488,8 +613,22 @@ footer .container-footer .box-footer .description {
   max-width: 350px;
   margin-top: 20px;
   font-weight: 500;
-  font-size: 1.3rem;
   color: #000942;
+}
+@media screen and (min-width: 0px) {
+  footer .container-footer .box-footer .description {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 720px) {
+  footer .container-footer .box-footer .description {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  footer .container-footer .box-footer .description {
+    font-size: 22px;
+  }
 }
 footer .container-footer .box-footer h2 {
   margin-bottom: 30px;

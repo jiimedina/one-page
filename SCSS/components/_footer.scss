@@ -27,8 +27,16 @@ footer{
                 max-width: 350px;
                 margin-top: 20px;
                 font-weight: 500;
-                font-size: 1.3rem;
                 color: nth($color, 2);
+                @include xs{
+                    font-size: 18px;
+                }
+                @include md{
+                    font-size: 20px;
+                }
+                @include xl{
+                    font-size: 22px;
+                }
             }
         }
 

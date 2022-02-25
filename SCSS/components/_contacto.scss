@@ -75,7 +75,8 @@
 
             .input-contacto{
                 margin-bottom: 20px;
-                span{
+
+                label{
                     font-size: 16px;
                     margin-bottom: 5px;
                     display: inline-block;
@@ -110,6 +111,19 @@
                             color: nth($color,6);
                         }
                     }
+                }
+
+                textarea{
+                    width: 100%;
+                    padding: 10px 20px;
+                    outline: none;
+                    font-weight: 400;
+                    border: 1px solid nth($color, 2);
+                    font-size: 16px;
+                    letter-spacing: 1px;
+                    color: nth($color, 2);
+                    background: transparent;
+                    border-radius: 20px;
                 }
 
                 p{

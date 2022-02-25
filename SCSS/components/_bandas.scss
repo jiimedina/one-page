@@ -11,19 +11,38 @@
         margin-left: 5%;
 
         .titulo-seccion{
-            font-size: 40px;
+            
             font-weight: 600;
             font-family: $font-ppal;
+
+            @include xs{
+                font-size: 25px;
+            }
+            @include md{
+                font-size: 30px;
+            }
+            @include xl{
+                font-size: 40px;
+            }
         }
 
         .parrafo{
             font-family: $font-sec;
-            font-size: 20px;
-            margin: 5% 0;
+            margin: 2% 0 0 4%;
+            @include xs{
+                font-size: 18px;
+            }
+            @include md{
+                font-size: 20px;
+            }
+            @include xl{
+                font-size: 22px;
+            }
         }
     }
 
     .contenedor-bandas{
+        margin-top: 5%;
         width: 100%;
         height: 100%;
         display: flex;
@@ -72,8 +91,8 @@
                 p{
                    letter-spacing: 1px; 
                    font-size: 15px;
+                  
                    margin-top: 8px;
-                   margin-top: 20px;
                 }
                 .btn{
                     text-decoration: map-get($map: $boton-s, $key: text-decoration-btn-s);

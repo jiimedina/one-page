@@ -17,7 +17,7 @@
     background-color: nth($color,4);
    
     .titulo-seccion{
-        
+        color: nth($color,7);
         font-weight: 600;
         font-family: $font-ppal;
         margin-left: 5%;
@@ -43,6 +43,7 @@
             }
 
             .parrafo{
+                color: nth($color,7);
                 font-family: $font-sec;
                 margin: 5% 0;
                 @include xs{

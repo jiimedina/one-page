@@ -308,6 +308,7 @@
   background-color: #4F6FBE;
 }
 #desfiles .titulo-seccion, .contenedor-desfile .titulo-seccion {
+  color: #FFFFFF;
   font-weight: 600;
   font-family: "Raleway", sans-serif;
   margin-left: 5%;
@@ -335,6 +336,7 @@
   margin: 0.3rem;
 }
 #desfiles .container .row-margin .parrafo, .contenedor-desfile .container .row-margin .parrafo {
+  color: #FFFFFF;
   font-family: "Inter", sans-serif;
   margin: 5% 0;
 }
